@@ -1,0 +1,22 @@
+<p-card>
+  <table>
+    <tr>
+      <td>航空公司:{{flight.company}}</td>
+      <td>{{flight.planType}}</td>
+      <td>航班号:{{flight.flightNo}}</td>
+    </tr>
+    <tr>
+      <td>起飞:{{flight.departAirport}}</td>
+      <td>降落:{{flight.arriveAirport}}</td>
+      <td *ngIf="flight.stopover">经停:{{flight.stopover}}</td>
+    </tr>
+    <tr>
+      <td>起飞时间:{{flight.departTime}}</td>
+      <td>起飞时间:{{flight.arriveTime}}</td>
+      <td *ngIf="flight.crossDay === true">T+1</td>
+    </tr>
+    <tr>
+      <td>价格:{{flight.price}}</td>
+    </tr>
+  </table>
+</p-card>

@@ -1,0 +1,6 @@
+<ul class="flightgroup">
+  <li *ngFor="let flight of flights" (click)="onSelect(flight)">
+    <app-flight [flight]="flight"></app-flight>
+  </li>
+</ul>
+<!-- <button (click)="onQuery()">test</button> -->

@@ -1,0 +1,12 @@
+/* flightgroupComponent's private CSS styles */
+.condition {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+table.lamp th, td{
+  padding: 10px;
+}
+.button {
+  float: right;
+}
